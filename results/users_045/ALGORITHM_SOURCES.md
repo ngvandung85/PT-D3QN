@@ -1,0 +1,13 @@
+# Algorithm provenance and audit
+
+| Method | Implemented definition | Audit note | Source |
+|---|---|---|---|
+| `Random` | Uniform sample over feasible actions | No privileged model information | Custom sanity baseline |
+| `Greedy_Physical_Utility` | Maximizes success-outcome physical utility and ignores outage risk | Distinct from the EUT expected-utility oracle | Custom myopic baseline |
+| `EUT_Myopic_Oracle` | Enumerates feasible actions and maximizes one-step expected utility centered on the selected user's reference | Exact one-step enumeration is this study's oracle; not a learned policy | von Neumann-Morgenstern expected utility — [von Neumann and Morgenstern, Theory of Games and Economic Behavior](https://www.jstor.org/stable/j.ctt1r2gkx) |
+| `PT_Myopic_Oracle` | Enumerates actions and maximizes the selected user's expected PT value | The PT function is sourced; exhaustive one-step enumeration is a custom oracle | Mitsis et al. UAV-MEC PT model — [Mitsis et al., Sensors 2020](https://www.mdpi.com/1424-8220/20/8/2434) |
+| `EUT_DQN` | Replay, target network, epsilon-greedy and Huber TD loss | Algorithmic adaptation with a task-specific NumPy MLP and Adam | Mnih et al. 2015 — [Mnih et al., DQN](https://www.nature.com/articles/nature14236) |
+| `EUT_DDQN` | Online action selection and target-network evaluation | Same EUT reward and training budget as EUT-DQN | van Hasselt et al. 2016 — [Mnih et al., DQN](https://www.nature.com/articles/nature14236); [van Hasselt et al., Double DQN](https://ojs.aaai.org/index.php/AAAI/article/view/10295) |
+| `EUT_Dueling_DQN` | Separate V(s) and A(s,a) heads with mean aggregation | Uses the vanilla DQN target and the same EUT reward | Wang et al. 2016 — [Mnih et al., DQN](https://www.nature.com/articles/nature14236); [Wang et al., Dueling Network Architectures](https://proceedings.mlr.press/v48/wangf16.html) |
+| `EUT_D3QN` | Double-DQN target plus dueling architecture | Direct architectural control for PT-D3QN | DDQN + Dueling — [van Hasselt et al., Double DQN](https://ojs.aaai.org/index.php/AAAI/article/view/10295); [Wang et al., Dueling Network Architectures](https://proceedings.mlr.press/v48/wangf16.html) |
+| `PT_D3QN` | EUT-D3QN architecture with each realized outcome transformed by the selected user's PT value function | Sensors 2020 supplies PT only, not D3QN; the controlled composition is proposed here | Proposed composition: DQN + DDQN + Dueling + PT — [Mnih et al., DQN](https://www.nature.com/articles/nature14236); [van Hasselt et al., Double DQN](https://ojs.aaai.org/index.php/AAAI/article/view/10295); [Wang et al., Dueling Network Architectures](https://proceedings.mlr.press/v48/wangf16.html); [Mitsis et al., Sensors 2020](https://www.mdpi.com/1424-8220/20/8/2434) |

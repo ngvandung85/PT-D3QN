@@ -1,0 +1,7 @@
+{
+  "rule": "Completion_First_Fair",
+  "simulator_sha256": "b5bb44186843fe4efe3c86e7039edcb398b35c23187f152641e815530e31ad91",
+  "driver_sha256": "d918963f11054861dd1c4c0a7a8be8ef547e1bfd31ceed5812fbc095ec536a15",
+  "numpy": "2.5.0",
+  "python": "3.14.5"
+}

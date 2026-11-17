@@ -1,0 +1,6 @@
+# Versions of the recorded run (results/users_NNN/reproducibility_manifest.json), Python 3.14.5.
+numpy==2.5.0
+pandas==3.0.3
+scipy==1.18.1
+# matplotlib is used for plotting only and does not affect any reported number.
+matplotlib==3.11.0

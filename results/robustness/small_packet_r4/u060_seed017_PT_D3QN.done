@@ -1,0 +1,11 @@
+{
+  "condition": "small_packet_r4",
+  "n_user": 60,
+  "method": "PT_D3QN",
+  "replicate_seed": 17,
+  "arrival_rate_pps": 1.0,
+  "packet_size_bits": 1000000,
+  "demand_users": null,
+  "simulator_sha256": "b5bb44186843fe4efe3c86e7039edcb398b35c23187f152641e815530e31ad91",
+  "seconds": 3514.6382133960724
+}

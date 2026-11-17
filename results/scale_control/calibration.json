@@ -1,0 +1,341 @@
+{
+  "calibration_seed": 7,
+  "driver_sha256": "9324c09a34d2f8285823dcbed18fccc089b06dec8357b6c7171489c8f82e6115",
+  "numpy": "2.5.0",
+  "pandas": "3.0.3",
+  "python": "3.14.5",
+  "rule": "c_U = SD(transformed reward) / SD(linear delta), both evaluated on the same TRAINING transitions of the two original arms on the calibration seed; service-opportunity slots only; no evaluation transition is used",
+  "simulator_sha256": "b5bb44186843fe4efe3c86e7039edcb398b35c23187f152641e815530e31ad91",
+  "user_counts": {
+    "15": {
+      "per_arm": {
+        "EUT_D3QN": {
+          "mean_abs_linear_delta": 0.15378152229049386,
+          "mean_abs_transformed_reward": 0.42115875330018265,
+          "n_transitions": 240000,
+          "sd_linear_delta": 0.1985807875464972,
+          "sd_reward_used": 0.1985807875464972,
+          "sd_transformed_reward": 0.37953753927204664
+        },
+        "PT_D3QN": {
+          "mean_abs_linear_delta": 0.15211659139535624,
+          "mean_abs_transformed_reward": 0.4208899486410487,
+          "n_transitions": 240000,
+          "sd_linear_delta": 0.1967374826393813,
+          "sd_reward_used": 0.3792910666928086,
+          "sd_transformed_reward": 0.3792910666928086
+        }
+      },
+      "pooled": {
+        "mean_abs_linear_delta": 0.15294905684292504,
+        "mean_abs_transformed_reward": 0.4210243509706157,
+        "n_transitions": 480000,
+        "sd_linear_delta": 0.1976610789040064,
+        "sd_reward_used": 0.31360474726826454,
+        "sd_transformed_reward": 0.37941400192808744
+      },
+      "regression_max_abs_diff": 1.1102230246251565e-16,
+      "regression_vs_archive": {
+        "EUT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 0.0,
+            "archived": 0.2092349084551208,
+            "rerun": 0.2092349084551208
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.35375,
+            "rerun": 7.35375
+          },
+          "utility_shortfall": {
+            "abs_diff": 0.0,
+            "archived": 0.1454046642377433,
+            "rerun": 0.1454046642377433
+          }
+        },
+        "PT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 1.1102230246251565e-16,
+            "archived": 0.2089053427197957,
+            "rerun": 0.2089053427197958
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.28625,
+            "rerun": 7.28625
+          },
+          "utility_shortfall": {
+            "abs_diff": 5.551115123125783e-17,
+            "archived": 0.1492053915176195,
+            "rerun": 0.14920539151761955
+          }
+        }
+      },
+      "scale_constant": 1.9195180155439144
+    },
+    "30": {
+      "per_arm": {
+        "EUT_D3QN": {
+          "mean_abs_linear_delta": 0.14522019592989488,
+          "mean_abs_transformed_reward": 0.41630348666848105,
+          "n_transitions": 240000,
+          "sd_linear_delta": 0.19468897839935043,
+          "sd_reward_used": 0.19468897839935043,
+          "sd_transformed_reward": 0.3853957663804539
+        },
+        "PT_D3QN": {
+          "mean_abs_linear_delta": 0.14465323955324108,
+          "mean_abs_transformed_reward": 0.4162767816342353,
+          "n_transitions": 240000,
+          "sd_linear_delta": 0.19334204198351196,
+          "sd_reward_used": 0.3809703887435229,
+          "sd_transformed_reward": 0.3809703887435229
+        }
+      },
+      "pooled": {
+        "mean_abs_linear_delta": 0.14493671774156797,
+        "mean_abs_transformed_reward": 0.4162901341513582,
+        "n_transitions": 480000,
+        "sd_linear_delta": 0.1940194157815109,
+        "sd_reward_used": 0.3132414893766439,
+        "sd_transformed_reward": 0.3832103449377855
+      },
+      "regression_max_abs_diff": 5.551115123125783e-17,
+      "regression_vs_archive": {
+        "EUT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 4.163336342344337e-17,
+            "archived": 0.104268931821944,
+            "rerun": 0.10426893182194404
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.32625,
+            "rerun": 7.32625
+          },
+          "utility_shortfall": {
+            "abs_diff": 5.551115123125783e-17,
+            "archived": 0.1470247775221237,
+            "rerun": 0.14702477752212376
+          }
+        },
+        "PT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 2.7755575615628914e-17,
+            "archived": 0.1039722444140104,
+            "rerun": 0.10397224441401043
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.3125,
+            "rerun": 7.3125
+          },
+          "utility_shortfall": {
+            "abs_diff": 2.7755575615628914e-17,
+            "archived": 0.1480047884578438,
+            "rerun": 0.14800478845784382
+          }
+        }
+      },
+      "scale_constant": 1.975113384370388
+    },
+    "45": {
+      "per_arm": {
+        "EUT_D3QN": {
+          "mean_abs_linear_delta": 0.13815845763525217,
+          "mean_abs_transformed_reward": 0.41401914615541036,
+          "n_transitions": 240000,
+          "sd_linear_delta": 0.18740059018923547,
+          "sd_reward_used": 0.18740059018923547,
+          "sd_transformed_reward": 0.3901719054497736
+        },
+        "PT_D3QN": {
+          "mean_abs_linear_delta": 0.1418092014524345,
+          "mean_abs_transformed_reward": 0.41531529371693654,
+          "n_transitions": 240000,
+          "sd_linear_delta": 0.19182733808882368,
+          "sd_reward_used": 0.3847631498081299,
+          "sd_transformed_reward": 0.3847631498081299
+        }
+      },
+      "pooled": {
+        "mean_abs_linear_delta": 0.13998382954384334,
+        "mean_abs_transformed_reward": 0.41466721993617345,
+        "n_transitions": 480000,
+        "sd_linear_delta": 0.18962803725378805,
+        "sd_reward_used": 0.31247476909006366,
+        "sd_transformed_reward": 0.38754500910372447
+      },
+      "regression_max_abs_diff": 6.938893903907228e-17,
+      "regression_vs_archive": {
+        "EUT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 1.3877787807814457e-17,
+            "archived": 0.0694488867218486,
+            "rerun": 0.06944888672184861
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.345,
+            "rerun": 7.345
+          },
+          "utility_shortfall": {
+            "abs_diff": 2.7755575615628914e-17,
+            "archived": 0.1460526276508674,
+            "rerun": 0.14605262765086743
+          }
+        },
+        "PT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 6.938893903907228e-17,
+            "archived": 0.0691079563352073,
+            "rerun": 0.06910795633520737
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.31,
+            "rerun": 7.31
+          },
+          "utility_shortfall": {
+            "abs_diff": 2.7755575615628914e-17,
+            "archived": 0.1479844406246064,
+            "rerun": 0.14798444062460642
+          }
+        }
+      },
+      "scale_constant": 2.0437115455930965
+    },
+    "5": {
+      "per_arm": {
+        "EUT_D3QN": {
+          "mean_abs_linear_delta": 0.14694869551057707,
+          "mean_abs_transformed_reward": 0.42136290618716,
+          "n_transitions": 239548,
+          "sd_linear_delta": 0.17407994061579513,
+          "sd_reward_used": 0.17407994061579513,
+          "sd_transformed_reward": 0.3678132769672194
+        },
+        "PT_D3QN": {
+          "mean_abs_linear_delta": 0.1312123425791575,
+          "mean_abs_transformed_reward": 0.408749618823419,
+          "n_transitions": 239775,
+          "sd_linear_delta": 0.1479197683158895,
+          "sd_reward_used": 0.3255271420157267,
+          "sd_transformed_reward": 0.3255271420157267
+        }
+      },
+      "pooled": {
+        "mean_abs_linear_delta": 0.139076792797519,
+        "mean_abs_transformed_reward": 0.41505327577584866,
+        "n_transitions": 479323,
+        "sd_linear_delta": 0.1615678409285625,
+        "sd_reward_used": 0.2786252996541888,
+        "sd_transformed_reward": 0.347783444002809
+      },
+      "regression_max_abs_diff": 1.1102230246251565e-16,
+      "regression_vs_archive": {
+        "EUT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 1.1102230246251565e-16,
+            "archived": 0.7014170042234424,
+            "rerun": 0.7014170042234426
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 8.32921875,
+            "rerun": 8.32921875
+          },
+          "utility_shortfall": {
+            "abs_diff": 0.0,
+            "archived": 0.0360509399946444,
+            "rerun": 0.0360509399946444
+          }
+        },
+        "PT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 0.0,
+            "archived": 0.650216494412757,
+            "rerun": 0.650216494412757
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.9825,
+            "rerun": 7.9825
+          },
+          "utility_shortfall": {
+            "abs_diff": 2.7755575615628914e-17,
+            "archived": 0.0202845178707885,
+            "rerun": 0.020284517870788527
+          }
+        }
+      },
+      "scale_constant": 2.1525536394125737
+    },
+    "60": {
+      "per_arm": {
+        "EUT_D3QN": {
+          "mean_abs_linear_delta": 0.1343311614600773,
+          "mean_abs_transformed_reward": 0.4136942308308957,
+          "n_transitions": 240000,
+          "sd_linear_delta": 0.180791299116857,
+          "sd_reward_used": 0.180791299116857,
+          "sd_transformed_reward": 0.3882674768974607
+        },
+        "PT_D3QN": {
+          "mean_abs_linear_delta": 0.13390047181111317,
+          "mean_abs_transformed_reward": 0.4120908909869548,
+          "n_transitions": 240000,
+          "sd_linear_delta": 0.18132813970925754,
+          "sd_reward_used": 0.38370577996353183,
+          "sd_transformed_reward": 0.38370577996353183
+        }
+      },
+      "pooled": {
+        "mean_abs_linear_delta": 0.13411581663559524,
+        "mean_abs_transformed_reward": 0.41289256090892523,
+        "n_transitions": 480000,
+        "sd_linear_delta": 0.18105995447361603,
+        "sd_reward_used": 0.30880029045432883,
+        "sd_transformed_reward": 0.3860062567731987
+      },
+      "regression_max_abs_diff": 9.020562075079397e-17,
+      "regression_vs_archive": {
+        "EUT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 2.0816681711721685e-17,
+            "archived": 0.0524269742535387,
+            "rerun": 0.05242697425353872
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.3525,
+            "rerun": 7.3525
+          },
+          "utility_shortfall": {
+            "abs_diff": 2.7755575615628914e-17,
+            "archived": 0.1455050566348691,
+            "rerun": 0.14550505663486912
+          }
+        },
+        "PT_D3QN": {
+          "offered_pdr": {
+            "abs_diff": 9.020562075079397e-17,
+            "archived": 0.0526405254593198,
+            "rerun": 0.05264052545931989
+          },
+          "throughput_mbps": {
+            "abs_diff": 0.0,
+            "archived": 7.367265625,
+            "rerun": 7.367265625
+          },
+          "utility_shortfall": {
+            "abs_diff": 8.326672684688674e-17,
+            "archived": 0.1398717100772425,
+            "rerun": 0.13987171007724258
+          }
+        }
+      },
+      "scale_constant": 2.1319250736332607
+    }
+  }
+}

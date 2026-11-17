@@ -1,0 +1,6 @@
+n_user,folder,state_dimension,action_count,transmission_action_count,n_replicates,train_episodes,eval_episodes,horizon,aggregate_arrival_rate_pps,aggregate_initial_packet_capacity,randomize_pt_profiles,reference_mode,reference_calibration_population_size,profile_rows_per_replicate_min,profile_rows_per_replicate_max,profile_sampling_scope
+5,users_005,109,181,180,10,3000,100,80,1.25,25,True,random_policy_calibration,60,5,5,once_per_user_per_replicate_frozen_all_methods
+15,users_015,319,541,540,10,3000,100,80,3.75,75,True,random_policy_calibration,60,15,15,once_per_user_per_replicate_frozen_all_methods
+30,users_030,634,1081,1080,10,3000,100,80,7.5,150,True,random_policy_calibration,60,30,30,once_per_user_per_replicate_frozen_all_methods
+45,users_045,949,1621,1620,10,3000,100,80,11.25,225,True,random_policy_calibration,60,45,45,once_per_user_per_replicate_frozen_all_methods
+60,users_060,1264,2161,2160,10,3000,100,80,15.0,300,True,random_policy_calibration,60,60,60,once_per_user_per_replicate_frozen_all_methods

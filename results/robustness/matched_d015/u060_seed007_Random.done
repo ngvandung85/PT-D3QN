@@ -1,0 +1,11 @@
+{
+  "condition": "matched_d015",
+  "n_user": 60,
+  "method": "Random",
+  "replicate_seed": 7,
+  "arrival_rate_pps": 0.0625,
+  "packet_size_bits": 4000000,
+  "demand_users": 15,
+  "simulator_sha256": "b5bb44186843fe4efe3c86e7039edcb398b35c23187f152641e815530e31ad91",
+  "seconds": 7.944185733795166
+}

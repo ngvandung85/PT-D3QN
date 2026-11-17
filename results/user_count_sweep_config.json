@@ -1,0 +1,32 @@
+{
+  "user_counts": [
+    5,
+    15,
+    30,
+    45,
+    60
+  ],
+  "folder_pattern": "users_NNN",
+  "run_seeds": [
+    7,
+    17,
+    27,
+    37,
+    47,
+    57,
+    67,
+    77,
+    87,
+    97
+  ],
+  "quick_run_only": false,
+  "random_pt_profiles_required": true,
+  "reference_mode": "random_policy_calibration",
+  "reference_calibration_scope": "once_per_replicate_at_maximum_user_count_then_exact_prefixes",
+  "training_profile_count": 20,
+  "evaluation_profile_held_out": true,
+  "slot_level_output_enabled": true,
+  "raw_data_location": "Each users_NNN folder contains training, episode, slot, user and selection raw CSV files; root files are compact plot tables.",
+  "interpretation": "This sweep jointly scales population, aggregate offered load, state dimension and action dimension; it is not an isolated action-space-only intervention.",
+  "cross_count_nesting": "For a common seed and episode, existing users retain identical alpha, beta, k, U_ref, geometry, initial packet counts, per-link shadowing, arrivals and shadow innovations; additional users are appended."
+}

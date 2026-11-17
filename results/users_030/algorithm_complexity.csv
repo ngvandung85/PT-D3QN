@@ -1,0 +1,10 @@
+n_user,method,state_dimension,transmission_action_count,total_action_count_including_idle,network_parameter_count,network_parameter_bytes_float64,packed_mask_bytes_per_transition,unpacked_bool_mask_bytes_per_transition,unshared_replay_array_payload_estimate_bytes_per_transition,unshared_replay_array_payload_estimate_mib_at_capacity,timing_note,n_replicates,decision_time_ms_median_across_replicates,decision_time_ms_mean_across_replicates
+30,EUT_D3QN,634,1080,1081,237370,1898960,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.091725,0.096892
+30,EUT_DDQN,634,1080,1081,237241,1897928,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.073875,0.0748755
+30,EUT_DQN,634,1080,1081,237241,1897928,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.0735,0.0767355
+30,EUT_Dueling_DQN,634,1080,1081,237370,1898960,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.09417500000000001,0.11816900000000001
+30,EUT_Myopic_Oracle,634,1080,1081,0,0,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.507725,0.526593
+30,Greedy_Physical_Utility,634,1080,1081,0,0,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.227275,0.23230650000000003
+30,PT_D3QN,634,1080,1081,237370,1898960,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.090175,0.10074000000000001
+30,PT_Myopic_Oracle,634,1080,1081,0,0,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.62,0.6268525
+30,Random,634,1080,1081,0,0,136,1081,5232,249.481201171875,hardware-dependent fixed-state microbenchmark,10,0.034225,0.0366

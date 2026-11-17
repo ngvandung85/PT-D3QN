@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+results/users_*/evaluation_step_raw.csv
+results/users_*/evaluation_user_raw.csv
+results/users_*/evaluation_selection_raw.csv
+results/users_*/evaluation_raw.csv
+results/users_*/training_history.csv
+results/robustness/*/*_users.csv

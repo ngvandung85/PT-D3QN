@@ -1,0 +1,17 @@
+{
+  "n_user": 60,
+  "replicate_seed": 47,
+  "method": "EUT_SCALED_D3QN",
+  "scale_constant": 2.1319250736332607,
+  "train_episodes": 3000,
+  "eval_episodes": 100,
+  "training_reward": {
+    "n_transitions": 240000,
+    "sd_linear_delta": 0.17768753956923658,
+    "sd_transformed_reward": 0.3899132421481589,
+    "sd_reward_used": 0.37881652087985734,
+    "mean_abs_linear_delta": 0.1310792159930707,
+    "mean_abs_transformed_reward": 0.41132242222338544
+  },
+  "seconds": 3407.8052110671997
+}
