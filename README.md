@@ -21,7 +21,7 @@ The simulator and all learning code are a single NumPy module. No GPU is used.
 | `results/` | Archived outputs (see `results/README.md`) |
 | `requirements-lock.txt` | Library versions of the recorded run |
 | `LICENSE` | Creative Commons Attribution 4.0 International (CC BY 4.0) |
-| `SHA256SUMS.txt` | Digests of every file in this repository |
+| `SHA256SUMS.txt` | Digests of every file in this repository. `.gitattributes` disables end-of-line conversion, so the files are stored byte-for-byte and `sha256sum -c SHA256SUMS.txt` verifies on any platform |
 | `RELEASE_ASSETS_SHA256.txt` | Digests of the release assets |
 
 ## Licence
